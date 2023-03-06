@@ -897,7 +897,7 @@ ul li a:hover, ul li a.active
             flex-direction: column;
             padding: 70px 0px;
             margin: 13rem 0rem 0rem;
-            height: 70vh;
+            height: 100vh;
             background-color: #FEFEFE;
         }
             
