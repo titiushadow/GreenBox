@@ -757,10 +757,8 @@ ul li a:hover, ul li a.active
     
 }
 
-
 /* Desktop screen */
-@media (max-width:2560px) {
-
+@media screen and (min-width: 2560), (max-height: 800px) {
         body {
             margin: 0;
             padding: 0;
