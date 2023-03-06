@@ -757,7 +757,9 @@ ul li a:hover, ul li a.active
     
 }
 
-@media (min-width:1280px) {
+
+/* Desktop screen */
+@media (max-width:1280px) {
 
         body {
             margin: 0;
@@ -765,6 +767,7 @@ ul li a:hover, ul li a.active
             box-sizing: border-box;
             overflow-x: hidden;
         }
+
         /* Navbar */
         nav {
             display: flex;
@@ -900,6 +903,4 @@ ul li a:hover, ul li a.active
             height: 100vh;
             background-color: #FEFEFE;
         }
-            
-
 }
