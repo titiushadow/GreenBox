@@ -823,6 +823,7 @@ ul li a:hover, ul li a.active
 
         .responsive {
             overflow-x: hidden;
+            overflow-y: hidden;
             width: 100%;
         }
 
