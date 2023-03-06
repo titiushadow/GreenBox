@@ -759,7 +759,7 @@ ul li a:hover, ul li a.active
 
 
 /* Desktop screen */
-@media (max-width:1280px) {
+@media (max-width:2560px) {
 
         body {
             margin: 0;
