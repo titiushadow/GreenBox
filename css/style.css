@@ -36,7 +36,6 @@ nav {
 
 ul {
     list-style: none;
-    gap: 3rem;
 }
 
 ul li {
@@ -118,8 +117,8 @@ ul li a:hover, ul li a.active
 
 .explore {
     display: flex;
-    width: 167px;
-    height: 43px;
+    width: 10.4rem;
+    height: 2.6rem;
     background-color: transparent;
     border: 1px solid #ffffff;
     border-radius: 10px;
@@ -141,8 +140,8 @@ ul li a:hover, ul li a.active
     display: flex;
     justify-content: end;
     align-items: end;
-    width: 362px;
-    height: 450px;
+    width: 22.6rem;
+    height: 28.1rem;
 }
 
 /* How it works - Section */
@@ -202,8 +201,8 @@ ul li a:hover, ul li a.active
     flex-direction: column;
     margin: 55px 0px 0px 0px;
     background-color: #f8f9fa;
-    width: 350px;
-    height: 274px;
+    width: 21.8rem;
+    height: 17.1rem;
     margin: 0px 0px 30px;
     padding: 40px;
     border-radius: 10px;
@@ -211,8 +210,8 @@ ul li a:hover, ul li a.active
 }
 
 .img-money {
-    width: 70px;
-    height: 72px;
+    width: 4.3rem;
+    height: 4.5rem;
     margin: 0px 35px 8px;
 }
 
@@ -288,8 +287,8 @@ ul li a:hover, ul li a.active
 }
 
 .img-first-feature {
-    width: 72px;
-    height: 70px;
+    width: 4.5rem;
+    height: 4.3rem;
     border-radius: 10px;
 }
 
@@ -330,8 +329,8 @@ ul li a:hover, ul li a.active
 }
 
 .why-is-best-img {
-    width: 350px;
-    height: 435px;
+    width: 21.8rem;
+    height: 27.1rem;
 }
 
 .infos {
@@ -423,8 +422,8 @@ ul li a:hover, ul li a.active
 }
 
 .card-team {
-    width: 362px;
-    height: 450px;
+    width: 22.6rem;
+    height: 28.1rem;
     position: relative;
 }
 
@@ -482,8 +481,8 @@ ul li a:hover, ul li a.active
     align-items: center;
     flex-direction: column;
     background-color: #f8f9fa;
-    width: 350px;
-    height: 320px;
+    width: 21.8rem;
+    height: 20rem;
     margin: 0px 0px 30px;
     padding: 40px;
     border-radius: 10px;
@@ -491,12 +490,13 @@ ul li a:hover, ul li a.active
 }
 
 .img-testimonials {
-    width: 90px;
-    height: 90px;
+    width: 5.6rem;
+    height: 5.6rem;
     margin: 0px 35px 30px;
     border-radius: 50%;
 }
 
+/* @media query mobile */
 @media screen and (max-width: 763px) {
 
     /* navbar */
@@ -556,8 +556,8 @@ ul li a:hover, ul li a.active
     }
 
     .img {
-        width: 360px;
-        height: 447px;
+        width: 22.5rem;
+        height: 27.9rem;
     }
 
     /* How-it-works */
@@ -602,8 +602,8 @@ ul li a:hover, ul li a.active
     }
 
     .img-feature {
-        width: 250px;
-        height: 450px;
+        width: 15.6rem;
+        height: 28.1rem;
     }
 
     .first-feature {
@@ -655,8 +655,8 @@ ul li a:hover, ul li a.active
     }
 
     .btn-download {
-        width: 168px;
-        height: 56px;
+        width: 10.5rem;
+        height: 3.5rem;
         margin-bottom: 2rem;
     }
 
@@ -683,8 +683,8 @@ ul li a:hover, ul li a.active
     
     .card-team {
         position: relative;
-        width: 362px;
-        height: 450px;
+        width: 22.6rem;
+        height: 28.1rem;
     }
     
     .img-team {
@@ -740,8 +740,8 @@ ul li a:hover, ul li a.active
         align-items: center;
         flex-direction: column;
         background-color: #f8f9fa;
-        width: 350px;
-        height: 320px;
+        width: 21.8rem;
+        height: 20rem;
         margin: 0px 0px 30px;
         padding: 40px;
         border-radius: 10px;
@@ -757,33 +757,148 @@ ul li a:hover, ul li a.active
     
 }
 
-@media (max-width: 1280px) {
+/* Desktop screen */
+@media screen and (min-width: 2560), (max-height: 800px) {
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 5rem;
+            padding: 1.2rem 1rem;
+            position: fixed;
+            background-color: #000000;
+            top: 0;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+        }
+        
+        .img-logo {
+            width: 10rem;
+            height: 10rem;
+            object-fit: contain;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        ul li {
+            display: inline-block;
+        }
+        
+        ul li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            padding: 8px 30px;
+            gap: 1rem;
+            border-radius: 7px;
+            transition: all .3s ease;
+        }
+        
         /* header */
         .main-section {
             display: flex;
+            align-items: center;
             width: 100%;
+            height: 95vh;
             background-color: #30bd54;  
         }
 
         .img-header {
             margin-top: 4.8rem;
-            width: 350px;
-            height: 450px;
+            width: 21.8rem;
+            height: 25rem;
             object-fit: contain;
+        }
+
+        .responsive {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            width: 100%;
+        }
+
+        .info {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 445px;
+            margin-right: 10rem;
+        }
+        
+        .h1-main {
+            font-weight: 600;
+            font-size: 42px;
+            margin: 0px 0px 14px;
+        }
+        
+        .p-main {
+            text-align: justify;
+            font-size: 15px;
+            font-weight: 300;
+            margin: 0px 0px 42px;
         }
 
         /* Advanced features */
         .description-advanced-features {
             text-align: center;
         }
+
+        .advanced-features-info {
+            display: flex;
+            flex-direction: column;
+            margin: 5.5rem 0rem  3rem;
+        }
     
         .img-feature {
-            width: 250px;
-            height: 450px;
+            width: 15.6rem;
+            height: 28.1rem;
         }
 
         .p-info-features-left, .p-info-features {
-            width: 350px;
+            width: 21.8rem;
             word-break: break-all;
+        }
+
+        /* Why-is-best  */
+        .why-is-best {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 70px 0px;
+            margin: 15.5rem 0rem 0rem 0rem;
+            height: 82vh;
+        }
+
+        /* Team */
+
+        .equipe-team {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 70px 0px;
+            margin: 13rem 0rem 0rem 0rem;
+            height: 82vh;
+            background-color: #f8f9fa !important;
+        }
+
+        .testimonials {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 70px 0px;
+            margin: 13rem 0rem 0rem;
+            height: 100vh;
+            background-color: #FEFEFE;
         }
 }
