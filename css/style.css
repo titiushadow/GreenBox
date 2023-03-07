@@ -872,7 +872,7 @@ ul li a:hover, ul li a.active
         .advanced-features-info {
             display: flex;
             flex-direction: column;
-            margin: 25rem 0rem  3rem;
+            margin: 30rem 0rem  3rem;
         }
     
         .img-feature {
@@ -893,6 +893,10 @@ ul li a:hover, ul li a.active
             padding: 70px 0px;
             margin: 25rem 0rem 0rem 0rem;
             height: 82vh;
+        }
+
+        .main-title-why {
+            margin-top: 10rem;
         }
 
         /* Team */
