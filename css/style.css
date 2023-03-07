@@ -765,6 +765,8 @@ ul li a:hover, ul li a.active
     }    
 }
 
+;
+
 /* Desktop screen */
 @media screen and (min-width: 2560px), (max-height: 800px) {
         body {
