@@ -36,6 +36,7 @@ nav {
 
 ul {
     list-style: none;
+    gap: 3rem;
 }
 
 ul li {
@@ -117,8 +118,8 @@ ul li a:hover, ul li a.active
 
 .explore {
     display: flex;
-    width: 10.4rem;
-    height: 2.6rem;
+    width: 167px;
+    height: 43px;
     background-color: transparent;
     border: 1px solid #ffffff;
     border-radius: 10px;
@@ -140,8 +141,8 @@ ul li a:hover, ul li a.active
     display: flex;
     justify-content: end;
     align-items: end;
-    width: 22.6rem;
-    height: 28.1rem;
+    width: 362px;
+    height: 450px;
 }
 
 /* How it works - Section */
@@ -201,8 +202,8 @@ ul li a:hover, ul li a.active
     flex-direction: column;
     margin: 55px 0px 0px 0px;
     background-color: #f8f9fa;
-    width: 21.8rem;
-    height: 17.1rem;
+    width: 350px;
+    height: 274px;
     margin: 0px 0px 30px;
     padding: 40px;
     border-radius: 10px;
@@ -210,8 +211,8 @@ ul li a:hover, ul li a.active
 }
 
 .img-money {
-    width: 4.3rem;
-    height: 4.5rem;
+    width: 70px;
+    height: 72px;
     margin: 0px 35px 8px;
 }
 
@@ -287,8 +288,8 @@ ul li a:hover, ul li a.active
 }
 
 .img-first-feature {
-    width: 4.5rem;
-    height: 4.3rem;
+    width: 72px;
+    height: 70px;
     border-radius: 10px;
 }
 
@@ -329,8 +330,8 @@ ul li a:hover, ul li a.active
 }
 
 .why-is-best-img {
-    width: 21.8rem;
-    height: 27.1rem;
+    width: 350px;
+    height: 435px;
 }
 
 .infos {
@@ -422,8 +423,8 @@ ul li a:hover, ul li a.active
 }
 
 .card-team {
-    width: 22.6rem;
-    height: 28.1rem;
+    width: 362px;
+    height: 450px;
     position: relative;
 }
 
@@ -481,8 +482,8 @@ ul li a:hover, ul li a.active
     align-items: center;
     flex-direction: column;
     background-color: #f8f9fa;
-    width: 21.8rem;
-    height: 20rem;
+    width: 350px;
+    height: 320px;
     margin: 0px 0px 30px;
     padding: 40px;
     border-radius: 10px;
@@ -490,17 +491,185 @@ ul li a:hover, ul li a.active
 }
 
 .img-testimonials {
-    width: 5.6rem;
-    height: 5.6rem;
+    width: 90px;
+    height: 90px;
     margin: 0px 35px 30px;
     border-radius: 50%;
 }
 
+/* Desktop screen */
+@media screen and (min-width: 2560px), (max-height: 800px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
 
-/* Contato */
+    /* Navbar */
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 5rem;
+        padding: 1.2rem 1rem;
+        position: fixed;
+        background-color: #000000;
+        top: 0;
+        width: 100%;
+    }
 
-/* @media query mobile */
-@media screen and (max-width: 763px) {
+    .logo {
+        display: flex;
+    }
+    
+    .img-logo {
+        width: 10rem;
+        height: 10rem;
+        object-fit: contain;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    ul li {
+        display: inline-block;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 8px 30px;
+        gap: 1rem;
+        border-radius: 7px;
+        transition: all .3s ease;
+    }
+    
+    /* header */
+    .main-section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 95vh;
+        background-color: #30bd54;  
+    }
+
+    .img-header {
+        margin-top: 4.8rem;
+        width: 21.8rem;
+        height: 25rem;
+        object-fit: contain;
+    }
+
+    .responsive {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 100%;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 445px;
+        margin-right: 10rem;
+    }
+    
+    .h1-main {
+        font-weight: 600;
+        font-size: 42px;
+        margin: 0px 0px 14px;
+    }
+    
+    .p-main {
+        text-align: justify;
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0px 0px 42px;
+    }
+
+    /* How-it-works - Card */
+    .how-it-works {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 70px 0px;
+        height: 95vh;
+        background-color: #FFFFFF;
+    }
+
+    /* Advanced features */
+    .advanced-features {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 70px 0px;
+        height:  115.6vh;
+        background-color: #f2f2f2 !important;
+    }
+
+    .description-advanced-features {
+        text-align: center;
+    }
+
+    .advanced-features-info {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0px 30px;
+    }
+
+    .img-feature {
+        width: 15.6rem;
+        height: 28.1rem;
+    }
+
+    .p-info-features-left, .p-info-features {
+        width: 21.8rem;
+        word-break: break-all;
+    }
+
+    /* Why-is-best  */
+    .why-is-best {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 70px 0px;
+        height: 82vh;
+    }
+
+    .why-is-best-info {
+        margin: 0px 0px 20px;
+    }
+
+    /* Team */
+    .equipe-team {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 70px 0px;
+        margin: 13rem 0rem 0rem 0rem;
+        height: 116vh;
+        background-color: #f2f2f2 !important;
+    }
+
+    .equipe-team-info {
+        margin: 0px 0px 40px;
+    }
+
+    .testimonials {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 70px 0px;
+        height: 100vh;
+        background-color: #FEFEFE;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
     /* navbar */
     nav {
         border-bottom: 1px solid #455468;
@@ -589,7 +758,7 @@ ul li a:hover, ul li a.active
         align-items: center;
         flex-direction: column;
         padding: 70px 0px;
-        height:  82.6vh;
+        height:  270.6vh;
         background-color: #f8f9fa !important;
     }
     
@@ -635,7 +804,6 @@ ul li a:hover, ul li a.active
         flex-direction: column;
         padding: 70px 0px;
         height:  82vh;
-        margin-top: 88rem;
     }
 
     .why-is-best-info {
@@ -676,7 +844,7 @@ ul li a:hover, ul li a.active
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 52rem;
+        margin-top: 45rem;
     }
     
     .equipe-team-info {
@@ -733,9 +901,9 @@ ul li a:hover, ul li a.active
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 12rem;
+        margin-top: 10rem;
         padding: 70px 0px;
-        height: 70vh;
+        height: 170vh;
         background-color: #FEFEFE;
     }
     
@@ -765,180 +933,4 @@ ul li a:hover, ul li a.active
         margin: 0px 35px 30px;
         border-radius: 50%;
     }    
-}
-
-;
-
-
-/* Desktop screen */
-@media screen and (min-width: 2560px), (max-height: 800px) {
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            overflow-x: hidden;
-        }
-
-        /* Navbar */
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 5rem;
-            padding: 1.2rem 1rem;
-            position: fixed;
-            background-color: #000000;
-            top: 0;
-            width: 100%;
-        }
-
-        .logo {
-            display: flex;
-        }
-        
-        .img-logo {
-            width: 10rem;
-            height: 10rem;
-            object-fit: contain;
-        }
-        
-        ul {
-            list-style: none;
-        }
-        
-        ul li {
-            display: inline-block;
-        }
-        
-        ul li a {
-            text-decoration: none;
-            color: #FFFFFF;
-            padding: 8px 30px;
-            gap: 1rem;
-            border-radius: 7px;
-            transition: all .3s ease;
-        }
-        
-        /* header */
-        .main-section {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: 95vh;
-            background-color: #30bd54;  
-        }
-
-        .img-header {
-            margin-top: 4.8rem;
-            width: 21.8rem;
-            height: 25rem;
-            object-fit: contain;
-        }
-
-        .responsive {
-            overflow-x: hidden;
-            overflow-y: hidden;
-            width: 100%;
-        }
-
-        .info {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            width: 445px;
-            margin-right: 10rem;
-        }
-        
-        .h1-main {
-            font-weight: 600;
-            font-size: 42px;
-            margin: 0px 0px 14px;
-        }
-        
-        .p-main {
-            text-align: justify;
-            font-size: 15px;
-            font-weight: 300;
-            margin: 0px 0px 42px;
-        }
-
-        /* How-it-works - Card */
-        .how-it-works {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding: 70px 0px;
-            height: 95vh;
-            background-color: #FFFFFF;
-        }
-
-        /* Advanced features */
-        .advanced-features {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            padding: 70px 0px;
-            height:  115.6vh;
-            background-color: #f2f2f2 !important;
-        }
-
-        .description-advanced-features {
-            text-align: center;
-        }
-
-        .advanced-features-info {
-            display: flex;
-            flex-direction: column;
-            margin: 0px 0px 20px;
-        }
-    
-        .img-feature {
-            width: 15.6rem;
-            height: 28.1rem;
-        }
-
-        .p-info-features-left, .p-info-features {
-            width: 21.8rem;
-            word-break: break-all;
-        }
-
-        /* Why-is-best  */
-        .why-is-best {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding: 70px 0px;
-            height: 82vh;
-        }
-
-        .why-is-best-info {
-            margin: 0px 0px 20px;
-        }
-
-        /* Team */
-        .equipe-team {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding: 70px 0px;
-            margin: 10rem 0rem 0rem 0rem;
-            height: 116vh;
-            background-color: #f2f2f2 !important;
-        }
-
-        .equipe-team-info {
-            margin: 0px 0px 40px;
-        }
-
-        .testimonials {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding: 70px 0px;
-            height: 100vh;
-            background-color: #FEFEFE;
-        }
-
-        /* Contato */
 }
