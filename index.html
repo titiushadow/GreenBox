@@ -7,6 +7,7 @@
     <title>GreenBox</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="/img/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Navbar -->
@@ -41,7 +42,7 @@
             </div>
             
             <div class="img">
-                <img class="img-header" src="/img/smartphones.png" alt="">
+                <img class="img-header" data-aos="fade-up" src="/img/smartphones.png" alt="">
             </div>
         </section>
 
@@ -58,19 +59,19 @@
             <!-- How it works cards -->
             <div class="how-work-cards">
                 <div class="row">
-                    <div class="cards">
+                    <div data-aos="fade-right" class="cards">
                         <img class="img-money" src="/img/pote.png" alt="">
                         <h4 class="title-card">Guarde o seu dinheiro</h4>
                         <P class="text-card">Guardar dinheiro pode ajudá-lo a alcançar suas metas financeiras e a ter mais controle sobre sua vida financeira.</P>
                     </div>
     
-                    <div class="cards">
+                    <div data-aos="fade-left" class="cards">
                         <img class="img-money" src="/img/profit.png" alt="">
                         <h4 class="title-card">Relatório por categoria</h4>
                         <P class="text-card">Relatório por categoria organiza as informações para que possa ser mostrada de forma detalhada de como o dinheiro está sendo ganho ou gasto.</P>
                     </div>
     
-                    <div class="cards">
+                    <div data-aos="fade-right" class="cards">
                         <img class="img-money" src="/img/credit_card.png" alt="">
                         <h4 class="title-card">Cartão de crédito</h4>
                         <P class="text-card">Tenha total controle sobre o cartão de crédito, acompanhe o histórico de compras e seu rendimento em tempo real.</P>
@@ -93,15 +94,15 @@
                 <div class="info-right">
                     <div class="col-infos">
                         <div class="first-advanced-feature">
-                            <div class="first-feature">
+                            <div data-aos="fade-right" data-aos-throttleDelay: 99 class="first-feature">
                                 <p class="p-info-features-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis rhoncus ante, eget molestie dolor.</p>
                                 <img class="img-first-feature" src="/img/config.png" alt="">
                             </div>
-                            <div class="first-feature">
+                            <div data-aos="fade-right" class="first-feature">
                                 <p class="p-info-features-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis rhoncus ante, eget molestie dolor.</p>
                                 <img class="img-first-feature" src="/img/config.png" alt="">
                             </div>
-                            <div class="first-feature">
+                            <div data-aos="fade-right" class="first-feature">
                                 <p class="p-info-features-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis rhoncus ante, eget molestie dolor.</p>
                                 <img class="img-first-feature" src="/img/config.png" alt="">
                             </div>
@@ -110,15 +111,15 @@
                         <img class="img-feature" src="/img/advanced-features-img.png" alt="">
     
                         <div class="second-advanced-feature">
-                            <div class="first-feature">
+                            <div data-aos="fade-left" class="first-feature">
                                 <img class="img-first-feature" src="/img/config.png" alt="">
                                 <p class="p-info-features">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis rhoncus ante, eget molestie dolor.</p>
                             </div>
-                            <div class="first-feature">
+                            <div data-aos="fade-left" class="first-feature">
                                 <img class="img-first-feature" src="/img/config.png" alt="">
                                 <p class="p-info-features">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis rhoncus ante, eget molestie dolor.</p>
                             </div>
-                            <div class="first-feature">
+                            <div data-aos="fade-left" class="first-feature">
                                 <img class="img-first-feature" src="/img/config.png" alt="">
                                 <p class="p-info-features">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis rhoncus ante, eget molestie dolor.</p>
                             </div>
@@ -177,14 +178,14 @@
             <div class="team-cards">
                 <div class="row">
                     <div class="card-team">
-                        <img class="img-team" src="/img/Victor.png" alt="">
+                        <img class="img-team" src="/img/sorvete.jfif" alt="">
                         <div class="details">
                             <h2>Mesaque<br><span>Front-End Junior</span></h2>
                         </div>
                     </div>
 
                     <div class="card-team">
-                        <img class="img-team" src="/img/Victor.png" alt="">
+                        <img class="img-team" src="/img/sol.jfif" alt="">
                         <div class="details">
                             <h2>Victor Soles<br><span>Back-End Junior</span></h2>
                         </div>
@@ -248,6 +249,15 @@
         </section>
     </div>
     
+
+
+    <!-- Importando AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Importando particles.js -->
     <script src="/js/particles.js"></script>
     <script src="/js/app.js"></script>
 </body>
