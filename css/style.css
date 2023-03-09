@@ -39,6 +39,8 @@ ul {
     gap: 3rem;
 }
 
+
+
 ul li {
     display: inline-block;
 }
@@ -88,7 +90,7 @@ ul li a:hover, ul li a.active
     justify-content: center;
     align-items: center;
     height: 69vh;
-    background-color: #30bd54;
+    background-color: #30BD54;
 }
 
 .info {
@@ -232,12 +234,21 @@ ul li a:hover, ul li a.active
 /* Advanced features */
 
 .advanced-features {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 70px 0px;
     height:  82.6vh;
-    background-color: #f8f9fa !important;
+    z-index: 1;
+}
+
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #f8f9fa;
 }
 
 .advanced-features-info {
@@ -278,6 +289,7 @@ ul li a:hover, ul li a.active
     align-items: center;
     flex-direction: row;
     width: 100rem;
+    background-color: #f8f9fa;
 }
 
 .first-feature {
@@ -497,7 +509,7 @@ ul li a:hover, ul li a.active
     border-radius: 50%;
 }
 
-.main-contato {
+.main-contato{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -748,6 +760,7 @@ section .container .user .formBx {
         flex-direction: column;
         padding: 70px 0px;
         height: 82vh;
+        margin-top: 3rem;
     }
 
     .why-is-best-info {
