@@ -495,11 +495,16 @@ ul li a:hover, ul li a.active
     flex-direction: column;
     background-color: #f8f9fa;
     width: 350px;
-    height: 320px;
+    height: 350px;
     margin: 0px 0px 30px;
     padding: 40px;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.title-card {
+    font-size: 18px;
+    margin-top: 5px;
 }
 
 .img-testimonials {
@@ -507,8 +512,13 @@ ul li a:hover, ul li a.active
     height: 90px;
     margin: 0px 35px 30px;
     border-radius: 50%;
+    object-fit: cover;
+}
+span{
+    color: #1f1e20;
 }
 
+/* Contato */
 .main-contato{
     display: flex;
     align-items: center;
