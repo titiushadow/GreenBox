@@ -480,38 +480,18 @@ ul li a:hover, ul li a.active
     background-color: #FFFFFF;
     border-radius: 50%;
     border-color: #000;
-    width: 43px;
-    height: 43px;
+    width: 45px;
+    height: 45px;
     margin: 0.5rem;
     cursor: pointer;
     transition: 0.5s ease-in-out;
-}
-
-.buttons-social-linkedin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    border-color: #000;
-    width: 43px;
-    height: 43px;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
+    text-decoration: none;
 }
 
 .redes:hover .buttons-social{
     display: flex;
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
-    margin-right: 0.8rem;
-}
-
-.redes:hover .buttons-social-linkedin{ 
-    display: flex;
-    transform: scale(1.1);
-    transition: 0.5s ease-in-out;
-    margin-right: 0.8rem;
 }
 
 .redes {
@@ -519,8 +499,8 @@ ul li a:hover, ul li a.active
 }
 
 .img-social {
-    width: 43px;
-    height: 43px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
 }
 
@@ -1089,19 +1069,6 @@ section .container .user .formBx {
         flex-direction: column;
     }
     
-    .card-team {
-        position: relative;
-        width: 22.6rem;
-        height: 28.1rem;
-    }
-    
-    .img-team {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-    
     .details h2 {
         position: absolute;
         bottom: 0;
@@ -1149,7 +1116,7 @@ section .container .user .formBx {
         flex-direction: column;
         background-color: #f8f9fa;
         width: 21.8rem;
-        height: 20rem;
+        height: 23rem;
         margin: 0px 0px 30px;
         padding: 40px;
         border-radius: 10px;
