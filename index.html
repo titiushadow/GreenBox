@@ -307,10 +307,19 @@
                 <div  class="user signinBx">
                     <div class="imgBx"><img src="/img/contato/greenbox_contato.png" alt=""></div>
                     <div class="formBx">
-                        <form action="">
-                            <input class="inputs" type="text" required placeholder="Nome Completo">
-                            <input class="inputs" type="text" required placeholder="Email">
-                            <textarea class="textarea" name="mensagem" id="mensagem" cols="50" rows="5" required placeholder="Mensagem"></textarea>
+                        <form action="https://formsubmit.co/victorsoles09@gmail.com" method="POST">
+                            <input class="inputs" name="name" type="text" required placeholder="Nome Completo">
+                            <input class="inputs" name="email" type="email" required placeholder="Email">
+                            <textarea class="textarea" name="message" id="mensagem" cols="50" rows="5" required placeholder="Mensagem"></textarea>
+
+                            <!-- inputs de configuração do email, documentação deles -> https://formsubmit.co/documentation -->
+                            <input type="hidden" name="_subject" value="Formulário GreenBox!">
+                            <input type="hidden" name="_cc" value="mesaque1212@gmail.com">
+                            <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem. Obrigado!">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contato">
+                            <input type="hidden" name="_captcha" value="false">
+
                             <button type="submit" class="submit">Enviar</button>  
                         </form>
                     </div>
