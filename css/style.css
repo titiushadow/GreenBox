@@ -438,6 +438,21 @@ ul li a:hover, ul li a.active
     width: 362px;
     height: 450px;
     position: relative;
+    filter: brightness(100%);
+}
+
+.card-team > .social_media {
+    display: none;
+}
+
+.card-team:hover > .social_media {
+    display: block;
+}
+
+.card-team:hover > .img-team {
+    filter: brightness(80%);
+    display: inline-block;
+    transition: 0.5s ease-in-out;
 }
 
 .img-team {
@@ -445,14 +460,57 @@ ul li a:hover, ul li a.active
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    z-index: 1;
 }
 
+/* Redes sociais */
+.social_media {
+    white-space: nowrap;
+    color: #fff;
+    position: absolute;
+    overflow: hidden;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.buttons-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border-color: transparent;
+    width: 40px;
+    height: 40px;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.redes:hover .buttons-social{
+    display: flex;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.redes {
+    margin-top: 3rem;
+}
+
+.img-social {
+    width:30px;
+    height:30px;
+    object-fit: contain;
+}
+
+/* Detalhes dos cards (Parte verde) */
 .details h2 {
     position: absolute;
     bottom: 0;
+    height: 5rem;
     width: 100%;
-    padding: 18px 0;
+    padding: 9px 18px;
     background-color: #30BD54;
     color: #fff;
     border-bottom-left-radius: 10px;
@@ -1001,7 +1059,7 @@ section .container .user .formBx {
     .equipe-team-info {
         display: flex;
         flex-direction: column ;
-        margin: 30px 0px 30px;
+        margin: 150px 0px 30px;
     }
 
     .row {
@@ -1009,19 +1067,6 @@ section .container .user .formBx {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
-    
-    .card-team {
-        position: relative;
-        width: 22.6rem;
-        height: 28.1rem;
-    }
-    
-    .img-team {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
     }
     
     .details h2 {
@@ -1052,7 +1097,7 @@ section .container .user .formBx {
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 10rem;
+        margin-top: 17rem;
         padding: 70px 0px;
         height: 170vh;
         background-color: #FEFEFE;
@@ -1071,7 +1116,7 @@ section .container .user .formBx {
         flex-direction: column;
         background-color: #f8f9fa;
         width: 21.8rem;
-        height: 20rem;
+        height: 23rem;
         margin: 0px 0px 30px;
         padding: 40px;
         border-radius: 10px;
