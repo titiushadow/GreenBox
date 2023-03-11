@@ -210,11 +210,12 @@ ul li a:hover, ul li a.active
     padding: 40px;
     border-radius: 10px;
     transition-duration: 800ms;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .cards:hover {
     background-color: #FFFFFF;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.1);
     transition-duration: 800ms;
 }
 
