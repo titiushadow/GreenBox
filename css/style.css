@@ -479,9 +479,9 @@ ul li a:hover, ul li a.active
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 50%;
-    border-color: #000;
-    width: 45px;
-    height: 45px;
+    border-color: transparent;
+    width: 40px;
+    height: 40px;
     margin: 0.5rem;
     cursor: pointer;
     transition: 0.5s ease-in-out;
@@ -499,8 +499,8 @@ ul li a:hover, ul li a.active
 }
 
 .img-social {
-    width: 30px;
-    height: 30px;
+    width:30px;
+    height:30px;
     object-fit: contain;
 }
 
