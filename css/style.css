@@ -1059,7 +1059,7 @@ section .container .user .formBx {
     .equipe-team-info {
         display: flex;
         flex-direction: column ;
-        margin: 30px 0px 30px;
+        margin: 150px 0px 30px;
     }
 
     .row {
@@ -1097,7 +1097,7 @@ section .container .user .formBx {
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 10rem;
+        margin-top: 17rem;
         padding: 70px 0px;
         height: 170vh;
         background-color: #FEFEFE;
