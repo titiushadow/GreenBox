@@ -695,6 +695,22 @@ section .container .user .formBx {
     transition: 0.3s ease-in-out;
 }
 
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+    background-color: #000;
+    bottom: 0;
+    width: 100%;    
+}
+
+.copyright-footer {
+    color: #FFFFFF;
+}
+
 /* Desktop screen */
 @media screen and (min-width: 2560px), (max-height: 800px) {
     body {
