@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/e9ade42bcc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://kit.fontawesome.com/e9ade42bcc.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/t4t5/sweetalert@32bd141c/dist/sweetalert.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/script.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -307,20 +310,19 @@
                 <div  class="user signinBx">
                     <div class="imgBx"><img src="/img/contato/greenbox_contato.png" alt=""></div>
                     <div class="formBx">
-                        <form action="https://formsubmit.co/victorsoles09@gmail.com" method="POST">
-                            <input class="inputs" name="name" type="text" required placeholder="Nome Completo">
-                            <input class="inputs" name="email" type="email" required placeholder="Email">
-                            <textarea class="textarea" name="message" id="mensagem" cols="50" rows="5" required placeholder="Mensagem"></textarea>
+                        <form id="formulario" action="https://formsubmit.co/victorsoles09@gmail.com" method="POST">
+                            <input class="inputs" name="name" type="text" id="nome"  placeholder="Nome Completo">
+                            <input class="inputs" name="email" type="email" id="email"  placeholder="Email">
+                            <textarea class="textarea" name="message" id="mensagem" cols="50" rows="5"  placeholder="Mensagem"></textarea>
 
                             <!-- inputs de configuração do email, documentação deles -> https://formsubmit.co/documentation -->
                             <input type="hidden" name="_subject" value="Formulário GreenBox!">
                             <input type="hidden" name="_cc" value="mesaque1212@gmail.com">
                             <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem. Obrigado!">
                             <input type="hidden" name="_template" value="box">
-                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contato">
                             <input type="hidden" name="_captcha" value="false">
 
-                            <button type="submit" class="submit">Enviar</button>  
+                            <button type="submit" onclick="enviar()" class="submit">Enviar</button>  
                         </form>
                     </div>
                 </div>
