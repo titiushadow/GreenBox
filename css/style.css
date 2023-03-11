@@ -53,10 +53,15 @@ ul li a {
     transition: all .3s ease;
 }
 
-ul li a:hover, ul li a.active
+ul li a.active
 {
     color: #FFF;
     background: #30BD54;
+}
+
+.links:hover{
+    color: #FFF;
+    background: #4b885a;
 }
 
 #icon {
@@ -445,7 +450,7 @@ ul li a:hover, ul li a.active
     width: 362px;
     height: 450px;
     position: relative;
-    filter: brightness(100%);
+    z-index: 1;
 }
 
 .card-team > .social_media {
@@ -457,9 +462,16 @@ ul li a:hover, ul li a.active
 }
 
 .card-team:hover > .img-team {
-    filter: brightness(80%);
+    opacity: 0.8;
+    z-index: 2;
     display: inline-block;
     transition: 0.5s ease-in-out;
+}
+
+.card-team:hover {
+    opacity: 0.8;
+    background-image: linear-gradient(to top left, #30BD54, #1C7031, #4B885A);
+    border-radius: 10px;
 }
 
 .img-team {
@@ -484,7 +496,7 @@ ul li a:hover, ul li a.active
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: transparent;
     border-radius: 50%;
     border-color: transparent;
     width: 40px;
@@ -499,6 +511,7 @@ ul li a:hover, ul li a.active
     display: flex;
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
+    background-color: #FFFFFF;
 }
 
 .redes {
