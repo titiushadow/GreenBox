@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/e9ade42bcc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://kit.fontawesome.com/e9ade42bcc.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/t4t5/sweetalert@32bd141c/dist/sweetalert.css%22%3E">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/script.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -307,10 +311,18 @@
                 <div  class="user signinBx">
                     <div class="imgBx"><img src="/img/contato/greenbox_contato.png" alt=""></div>
                     <div class="formBx">
-                        <form action="">
-                            <input class="inputs" type="text" required placeholder="Nome Completo">
-                            <input class="inputs" type="text" required placeholder="Email">
-                            <textarea class="textarea" name="mensagem" id="mensagem" cols="50" rows="5" required placeholder="Mensagem"></textarea>
+                        <form id="submit-form">
+                            <input class="inputs" name="name" id="name" type="text" placeholder="Nome Completo">
+                            <input class="inputs" name="email" id="email" type="email" placeholder="Email">
+                            <textarea class="textarea" name="message" id="message" cols="50" rows="5" placeholder="Mensagem"></textarea>
+                        
+                            <!-- inputs de configuração do email, documentação deles -> https://formsubmit.co/documentation -->
+                            <input type="hidden" id="_subject" value="Formulário GreenBox!">
+                            <input type="hidden" id="_cc" value="mesaque1212@gmail.com">
+                            <input type="hidden" id="_autoresponse" value="Recebemos sua mensagem. Obrigado!">
+                            <input type="hidden" id="_template" value="box">
+                            <input type="hidden" id="_captcha" value="false">
+                        
                             <button type="submit" class="submit">Enviar</button>  
                         </form>
                     </div>
