@@ -60,10 +60,11 @@ $(document).ready(function() {
 
         $.ajax({
             method: 'POST',
-            url: 'https://formsubmit.co/ajax/victorsoles09@gmail.com',
+            url: 'https://formsubmit.co/ajax/post-victorsoles09@gmail.com',
             dataType: 'json',
             accepts: 'application/json',
             data: formData,
+            contentType: 'application/x-www-form-urlencoded',
             error: function(err) {
                 const isValid = validateFields();
 
