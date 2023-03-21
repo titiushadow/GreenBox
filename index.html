@@ -18,48 +18,40 @@
     <script src="https://kit.fontawesome.com/e9ade42bcc.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/js/script.js"></script>
+    <script src="/js/script.js" defer></script>
 </head>
 <body>
     <!-- Navbar -->
-    <nav>
-        <div class="logo">
-            <a href="#home">
-                <img class="img-logo" src="/img/navbar/logo.png" alt="">
-            </a>
-        </div>
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox" id="icon">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-        </label>
-        <ul>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#como_funciona" class="links">Como funciona</a></li>
-            <li><a href="#advanced-features" class="links">Recursos avançados</a></li>
-            <li><a href="#why_is_best" class="links">Porque usar GreenBox</a></li>
-            <li><a href="#contato" class="links">Contato</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="header-infos">
+                <img class="img-header" src="/img/navbar/logo.png" alt="navbar_jovool">
+            </div>
+            <div class="links">
+                <a href="#home" class="pNavbar">Home</a>
+                <a href="#como_funciona" class="pNavbar">Como funciona</a>
+                <a href="#advanced-features" class="pNavbar">Recursos avançados</a>
+                <a href="#why_is_best" class="pNavbar">Porque usar GreenBox</a>
+                <a href="#contato" class="pNavbar">Contato</a>
+            </div>
+        </nav>
+    </header>
 
-    
     <!-- Main Section-->
     <div class="responsive">
-        <section id="home" class="main-section">
-            <div class="info" data-aos="fade-right">
-                <h1 class="h1-main">GreenBox</h1>            
-                <p class="p-main">
-                    Com o GreenBox, gerenciar suas finanças nunca foi tão fácil e intuitivo! Com uma interface eficaz, 
+        <section id="home" class="main-content">
+            <div class="video-wrapper">
+                <video src="/img/HOMEJOVOOL_720.mp4"  width="100%" autoplay muted loop ></video>
+                <div class="text-overlay">
+                    <h1>GreenBox</h1>
+                    <h2>Com o GreenBox, gerenciar suas finanças nunca foi tão fácil e intuitivo! Com uma interface eficaz, 
                     você pode acompanhar seus gastos em tempo real de maneira inteligente e segura. 
-                    Não deixe mais suas finanças fora de controle, experimente o GreenBox agora mesmo! 
-                </p>
-                <a href="#why_is_best" class="explore">Saiba mais</a>
+                    Não deixe mais suas finanças fora de controle, experimente o GreenBox agora mesmo!</h2>
+    
+                    <button class="start-now"><b>Começar agora</b></button>
+                </div>
             </div>
-            
-            <div class="img">
-                <img class="img-header" data-aos="fade-up" src="/img/main_section/smartphones.png " alt="">
-            </div>
-        </section>
-
+        </section>	
 
         <!-- How-it-works - Section -->
         <section id="como_funciona" class="how-it-works">
@@ -153,7 +145,7 @@
             <!-- Why-is-best - info -->
             <div class="why-is-best-content">
                 <div class="row-why" data-aos="fade-up">
-                    <img class="why-is-best-img" src="/img/why-is-best/why-img.png" alt="">
+                    <img class="why-is-best-img" src="/img/mockup.png" alt="">
                 <div class="infos">
                     <h2 class="main-title-why-best" data-aos="fade-up">Use GreenBox em qualquer lugar</h2>
                     <p class="description-why-best" data-aos="fade-left">

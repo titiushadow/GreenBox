@@ -9,6 +9,23 @@ function menuShow() {
     }
 }
 
+var navbar = document.querySelector(".navbar");
+var pNavbar = document.querySelector(".pNavbar");
+
+window.addEventListener("scroll", function() {
+  if (window.pageYOffset > navbar.offsetHeight) {
+    navbar.classList.remove("navbar-transparent");
+    navbar.classList.add("navbar-white");
+    pNavbar.classList.remove("pNavbar-black");
+    pNavbar.classList.add("pNavbar-white");
+  } else {
+    navbar.classList.remove("navbar-white");
+    navbar.classList.add("navbar-transparent");
+    pNavbar.classList.remove("pNavbar-white");
+    pNavbar.classList.add("pNavbar-black");
+  }
+});
+
 // Envio de mensagem e validação do formulário 
 function validateFields() {
     const name = $('#name').val();

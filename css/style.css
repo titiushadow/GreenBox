@@ -15,144 +15,122 @@ body {
     overflow-x : hidden;
 }
 
-nav {
+.img-header {
+    width: 160px;
+    height: 160px;
+}
+
+.navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5rem;
-    padding: 1.2rem 1rem;
-    position: fixed;
-    background-color: #000000;
+    height: 80px;
     top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s ease;
     z-index: 100;
+}
+
+.navbar-transparent {
+    background-color: transparent;
+}
+
+.navbar-white {
+    background-color: black;
+}
+
+.navbar-white .pNavbar {
+    color: white;
+}
+
+.navbar-transparent .pNavbar {
+    color: white;
+}
+
+.header-infos {
+    margin-left: 5rem;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.pNavbar {
+    font-size: 17px;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.pNavbar:hover {
+    color: #30BD54;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Section - main-content */
+.main-content {
+    height: 110vh;
+}
+
+.video-wrapper {
+    position: relative;
+    z-index: 1;
     width: 100%;
 }
 
-.logo {
+video {
+    filter: brightness(100%);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 555px;
+    height: 300px;
+}
+
+.text-overlay h1 {
     display: flex;
-}
-
-.img-logo {
-    width: 10rem;
-    height: 10rem;
-    object-fit: contain;
-}
-
-ul {
-    list-style: none;
-    gap: 3rem;
-}
-
-
-
-ul li {
-    display: inline-block;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    padding: 8px 30px;
-    border-radius: 7px;
-    transition: all .3s ease;
-}
-
-ul li a.active
-{
-    color: #FFF;
-    background: #30BD54;
-}
-
-.links:hover{
-    color: #FFF;
-    background: #4b885a;
-}
-
-#icon {
-    background-color: #30BD54;
-    padding: 5px 7px 3px 7px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-}
-
-#icon svg {
-    color: #FFF;
-    height: 28px;
-    transition: all .3s ease;
-}
-
-#icon:hover {
-    background: #FFF;
-}
-
-#icon:hover svg {
-    color: #30BD54;
-}
-
-#checkbox, #icon {
-    display: none;
-}
-
-.main-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 69vh;
-    background-color: #30BD54;
-}
-
-.info {
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    width: 445px;
-    margin-right: 10rem;
+    color: #fff;
+    text-align: left;
+    font-size: 40px;
+    margin: 0px 0px 8px;
 }
 
-.h1-main {
-    font-weight: 600;
-    font-size: 42px;
-    margin: 0px 0px 14px;
-}
-
-.p-main {
+.text-overlay h2 {
+    font-size: 22px;
+    color: #FFFFFF;
+    margin: 16px 0px 8px;
+    font-weight: 500;
     text-align: justify;
-    font-size: 15px;
-    margin: 0px 0px 42px;
 }
 
-:is(.h1-main, .p-main) {
+.start-now {
+    background-color: #30bd54;
     color: #FFFFFF;
-}
-
-.explore {
-    display: flex;
-    width: 167px;
-    height: 43px;
-    background-color: transparent;
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    color: #FFFFFF;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
+    margin: 24px 0px 0px;
+    padding: 6px 0px;
+    width: 555px;
+    height: 40px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transition: 0.2s ease-in-out;
 }
 
-.explore:hover {
-    color: #111111;
-    background-color: #FFFFFF;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.img-header {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    width: 362px;
-    height: 450px;
+.start-now:hover {
+    filter: brightness(110%);
+    transition: 0.2s ease-in-out;
 }
 
 /* How it works - Section */
@@ -643,7 +621,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
 section .container {
