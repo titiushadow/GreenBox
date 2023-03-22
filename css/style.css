@@ -147,12 +147,50 @@ ul li a.active
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.img-header {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    width: 362px;
-    height: 450px;
+.imagem-container {
+    position: relative;
+}
+
+.imagem-fundo {
+    margin-top: 4rem;
+    width: 100%;
+    height: auto;
+}
+
+.imagem-sobreposicao {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 28rem;
+    transform: translate(-50%, -50%);
+    animation: flutuante 6s ease-in-out infinite;
+}
+
+@keyframes flutuante {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.imagem-sobreposicao2 {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 28rem;
+    transform: translate(-50%, -50%);
+    animation: flutuante2 6s ease-in-out infinite;
+}
+
+@keyframes flutuante2 {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(30px);
+    }
 }
 
 /* How it works - Section */
@@ -293,9 +331,17 @@ ul li a.active
     justify-content: center;
 }
 
+.i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
 .img-feature {
-    width: 300px;
-    height: 450px;
+    width: 14.5rem;
+    height: 28.1rem;
     margin: 30px 30px 30px;
 }
 
@@ -326,7 +372,7 @@ ul li a.active
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 10px 0px;
+    margin: 0px 15px 0px;
 }
 
 .second-feature {
@@ -379,8 +425,18 @@ ul li a.active
 }
 
 .why-is-best-img {
-    width: 350px;
+    width: 365px;
     height: 435px;
+    animation: img-feature 6s ease-in-out infinite;
+}
+
+@keyframes img-feature {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(30px);
+    }
 }
 
 .infos {
@@ -873,7 +929,7 @@ footer {
     }
 
     .img-feature {
-        width: 15.6rem;
+        width: 13.6rem;
         height: 28.1rem;
     }
 
@@ -907,7 +963,7 @@ footer {
         flex-direction: column;
         padding: 70px 0px;
         height: 82vh;
-        margin-top: 3rem;
+        margin-top: 6rem;
     }
 
     .why-is-best-info {
@@ -1018,6 +1074,52 @@ footer {
         height: 27.9rem;
     }
 
+    .imagem-container {
+        position: relative;
+    }
+    
+    .imagem-fundo {
+        margin-top: 4rem;
+        width: 100%;
+        height: auto;
+    }
+    
+    .imagem-sobreposicao {
+        position: absolute;
+        top: 12%;
+        left: 5%;
+        width: 21rem;
+        transform: translate(-50%, -50%);
+        animation: flutuante 6s ease-in-out infinite;
+    }
+    
+    @keyframes flutuante {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-30px);
+        }
+    }
+    
+    .imagem-sobreposicao2 {
+        position: absolute;
+        top: 20%;
+        left: 4%;
+        width: 21rem;
+        transform: translate(-50%, -50%);
+        animation: flutuante2 6s ease-in-out infinite;
+    }
+    
+    @keyframes flutuante2 {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(30px);
+        }
+    }
+
     /* How-it-works */
     .how-it-works{
         display: flex;
@@ -1076,7 +1178,7 @@ footer {
     }
 
     .img-feature {
-        width: 15.6rem;
+        width: 15rem;
         height: 28.1rem;
     }
 
