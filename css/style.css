@@ -342,7 +342,7 @@ ul li a.active
 .img-feature {
     width: 23.5rem;
     height: 28.1rem;
-    margin: 30px 30px 0px;
+    margin: 30px 0px 0px;
     animation: img-feature 6s ease-in-out infinite;
 }
 
@@ -382,7 +382,7 @@ ul li a.active
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 10px 0px;
+    margin: 0px 15px 0px;
 }
 
 .second-feature {
@@ -939,7 +939,7 @@ footer {
     }
 
     .img-feature {
-        width: 15.6rem;
+        width: 21.6rem;
         height: 28.1rem;
     }
 
@@ -973,7 +973,7 @@ footer {
         flex-direction: column;
         padding: 70px 0px;
         height: 82vh;
-        margin-top: 3rem;
+        margin-top: 6rem;
     }
 
     .why-is-best-info {
