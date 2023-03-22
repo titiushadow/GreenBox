@@ -340,19 +340,9 @@ ul li a.active
 }
 
 .img-feature {
-    width: 23.5rem;
+    width: 14.5rem;
     height: 28.1rem;
-    margin: 30px 0px 0px;
-    animation: img-feature 6s ease-in-out infinite;
-}
-
-@keyframes img-feature {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(30px);
-    }
+    margin: 30px 30px 30px;
 }
 
 .p-info-features {
@@ -435,7 +425,7 @@ ul li a.active
 }
 
 .why-is-best-img {
-    width: 400px;
+    width: 365px;
     height: 435px;
     animation: img-feature 6s ease-in-out infinite;
 }
@@ -939,7 +929,7 @@ footer {
     }
 
     .img-feature {
-        width: 21.6rem;
+        width: 13.6rem;
         height: 28.1rem;
     }
 
@@ -1084,6 +1074,52 @@ footer {
         height: 27.9rem;
     }
 
+    .imagem-container {
+        position: relative;
+    }
+    
+    .imagem-fundo {
+        margin-top: 4rem;
+        width: 100%;
+        height: auto;
+    }
+    
+    .imagem-sobreposicao {
+        position: absolute;
+        top: 12%;
+        left: 5%;
+        width: 21rem;
+        transform: translate(-50%, -50%);
+        animation: flutuante 6s ease-in-out infinite;
+    }
+    
+    @keyframes flutuante {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-30px);
+        }
+    }
+    
+    .imagem-sobreposicao2 {
+        position: absolute;
+        top: 20%;
+        left: 4%;
+        width: 21rem;
+        transform: translate(-50%, -50%);
+        animation: flutuante2 6s ease-in-out infinite;
+    }
+    
+    @keyframes flutuante2 {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(30px);
+        }
+    }
+
     /* How-it-works */
     .how-it-works{
         display: flex;
@@ -1142,7 +1178,7 @@ footer {
     }
 
     .img-feature {
-        width: 15.6rem;
+        width: 15rem;
         height: 28.1rem;
     }
 
