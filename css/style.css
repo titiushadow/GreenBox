@@ -43,8 +43,6 @@ ul {
     gap: 3rem;
 }
 
-
-
 ul li {
     display: inline-block;
 }
@@ -194,7 +192,6 @@ ul li a.active
 }
 
 /* How it works - Section */
-
 .how-it-works {
     display: flex;
     align-items: center;
@@ -285,7 +282,6 @@ ul li a.active
 }
 
 /* Advanced features */
-
 .advanced-features {
     position: relative;
     display: flex;
@@ -325,7 +321,6 @@ ul li a.active
 }
 
 /* Advanced features content */
-
 .advanced-features-content {
     display: flex;
     justify-content: center;
@@ -389,7 +384,6 @@ ul li a.active
 }
 
 /* Why-is-best */
-
 .why-is-best {
     display: flex;
     align-items: center;
@@ -647,7 +641,6 @@ ul li a.active
 }
 
 /* Testimonials cards */
-
 .testimonials-card {
     display: flex;
     align-items: center;
@@ -790,7 +783,6 @@ section .container .user .formBx {
 }
 
 /* Footer */
-
 footer {
     display: flex;
     align-items: center;
@@ -995,7 +987,6 @@ footer {
     }
 
     /* Contato */
-
     .main-contato {
         display: flex;
         align-items: center;
@@ -1012,7 +1003,6 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-
     /* navbar */
     nav {
         border-bottom: 1px solid #455468;
