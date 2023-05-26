@@ -20,6 +20,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/script.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="https://unpkg.com/vlibras-plugin@2.3.1/dist/vlibras-plugin.js"></script>
+
 </head>
 <body>
     <!-- Navbar -->
@@ -46,7 +49,7 @@
     <!-- Main Section-->
     <div class="responsive">
         <section id="home" class="main-section">
-            <div class="info" data-aos="fade-right">
+            <div class="info" style="margin-left: 10rem;" data-aos="fade-right">
                 <h1 class="h1-main">GreenBox</h1>            
                 <p class="p-main">
                     Com o GreenBox, gerenciar suas finanças nunca foi tão fácil e intuitivo! Com uma interface eficaz, 
@@ -61,6 +64,13 @@
                 <img src="/img/imagem_frente.png" class="imagem-sobreposicao">
                 <img src="/img/imagem_fundo.png" class="imagem-sobreposicao2">
             </div>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div class="vw-plugin-wrapper">
+                <div class="vw-plugin-top-wrapper" style="width: 500px;"></div>
+            </div>
+        </div>
         </section>
 
 
@@ -357,5 +367,11 @@
     <!-- Importando particles.js -->
     <script src="/js/particles.js"></script>
     <script src="/js/app.js"></script>
+
+    <script>
+            document.addEventListener("DOMContentLoaded", function() {
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    });
+    </script>
 </body>
 </html>
