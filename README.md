@@ -6,7 +6,7 @@
 
 > This landing page was developed using HTML, CSS, and Javascript, aiming to promote the concept of my TCC: a financial management application.
 
-## 🤝 Desenvolvedores
+## 🤝 Developers
 
 <table>
   <tr>
