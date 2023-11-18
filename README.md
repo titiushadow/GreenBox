@@ -10,7 +10,7 @@
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/titiushadow" target="_blank">
+      <a href="https://github.com/titiushadow">
         <img src="https://avatars.githubusercontent.com/u/63453751?v=4" width="150px;" alt="Foto do Mesaque"/><br>
         <sub>
           <b>Mesaque</b>
@@ -18,7 +18,7 @@
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/victorsoles" target="_blank">
+      <a href="https://github.com/victorsoles">
         <img src="https://avatars.githubusercontent.com/u/87205953?v=4" width="150px;" alt="Foto do Victor Soles"/><br>
         <sub>
           <b>Victor Soles</b>
