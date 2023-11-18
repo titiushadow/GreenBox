@@ -1,4 +1,5 @@
-# Nome do projeto
+# GreenBox - Financial management
+
 <div align="center">
   <img src="https://github.com/titiushadow/GreenBox/assets/63453751/d7cd5c23-0d53-4f45-87c5-b5b02f95b046" alt="image" style="width:200p;">
 </div>
